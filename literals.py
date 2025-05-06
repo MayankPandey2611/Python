@@ -20,8 +20,8 @@
 # print(type(x),type(y))
 
 #EX 4. (SAME) STRING
-# x=""
-# y=""
+# x=''
+# y=''
 # print(id(x),id(y))
 # print(type(x),type(y))
 
@@ -36,6 +36,7 @@
 #EX 6. (DIFFERENT) DICTIONARY
 # x={}
 # y={}
+# print(x,y)
 # print(id(x),id(y))
 # print(type(x),type(y))
 
@@ -43,20 +44,30 @@
 # EX 7. (DIFFERENT) SET
 # x={""}
 # y={""}
+# z=set()
 # print(id(x),id(y))
 # print(type(x),type(y))
 
 
-# EX 8. (DIFFERENT)  FROZENSET
+# EX 8. (SAME)  FROZENSET
 
 # x=frozenset()
 # y=frozenset()
 # print(id(x),id(y))
 # print(type(x),type(y))
 
-# EX 8. (DIFFERENT) COMPLEX
+# EX 9. (SAME) COMPLEX
 
 # x=complex(3,4)
 # y=complex(4,3)
 # print(id(x),id(y))
 # print(type(x))
+
+
+# EX 10. (SAME) BOOLEAN
+
+# x=True
+# y=True
+# print(id(x),id(y))
+# print(type(x))
+

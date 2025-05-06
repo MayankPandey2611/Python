@@ -76,7 +76,7 @@
 # print(x)
 # print(type(x))
 
-y = "python"
-y = frozenset(y)
-print(y)
-print(type(y))
+# y = "python"
+# y = frozenset(y)
+# print(y)
+# print(type(y))

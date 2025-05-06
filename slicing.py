@@ -29,11 +29,11 @@ s='I LOVE PYTHON'
 
 
 # EX 5. 
-#print( s[-1:-7])
+# print( s[-1:-7])
 
 
 # EX 6. 
-#print(s[-9:-4])
+# print(s[-9:-4])
 
 
 # EX 7. 
@@ -44,4 +44,4 @@ s='I LOVE PYTHON'
 # print( s[10:5:-1])
 
 
-print(s[::-1][2:10][::-1][::-1])
+# print(s[::-1][2:10][::-1][::-1])

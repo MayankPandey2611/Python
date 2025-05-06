@@ -1,5 +1,8 @@
 #------------------------------------------------------------TYPES OF DATATYPES----------------------------------------------------#
 # 1. NUMERIC => INTEGERS , FLOAT , COMPLEX
+# 2. MAPPED => DICTIONARY.
+# 3. ORDERED => STRING , LIST , TUPLE.
+# 4. UNORDERED => SET , FROZENSET .
 
 
 # ----------------------------------------INTEGERS-------------------------------------#
