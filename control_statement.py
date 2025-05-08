@@ -60,6 +60,8 @@
 
 
 
+#-----------CALCULATE  DIVISIONS---------------#
+
 # h,e,m = float(input("enter marks of hindi: ")),float(input("enter marks of english: ")),float(input("enter marks of maths: "))
 
 # if(h>=0 and h<=100 and e>=0 and e<=100 and m>=0 and m<=100):
@@ -82,3 +84,79 @@
 #     print(f'entered marks are invalid.')
 
 
+#-----------FIND DATATYPE OF INPUT---------------#
+
+# n=eval(input("enter value: "))
+
+# if(n>=0 or n<0):
+#     print(f'{type(n)}')
+# elif(n==a or ):
+#     print(f'{type(n)}')
+# else:
+#     print(f'invalid input')
+
+
+
+# DEFAULT SYNTAX OF PRINT (SEP=' ',END = '\N')
+
+# print('hello' , end='\n')
+# print('hello' , end=',')
+# print('welcome')
+
+
+# x=10
+# y=20
+# print(x,y,sep=',')
+
+
+#-----------PRINT COUNTING---------------#
+
+# n=int(input("enter number: "))
+# i=1
+
+# FIRST APPROACH
+# while i<=n:
+#     print(i)
+#     i=i+1
+
+# SECOND APPROACH
+# sum=0
+# while i<=n:
+#     sum=sum+i
+#     if i<=(n-1):
+#         print(i,end=' + ')
+#     else:
+#         print(i,end=' = ')    
+#     i=i+1
+# print(sum)
+
+# multi = 1
+# while i<=n:
+#     multi = multi*i
+#     if i<=(n-1):
+#         print(i,end='*')
+#     else:
+#         print(i,end='=')    
+#     i=i+1    
+# print(multi)    
+
+# a=n
+# fact =1
+# while n>0:
+#     fact=fact*n
+#     n=n-1
+# print(f'factorial of given number {a} is {fact}')    
+
+
+#QUES(2). WAP TO PRINT EVEN NO UPTO N NATURAL NUMBER
+
+n=int(input("enter a number: "))
+i=2
+while i<=n:
+    if i%2==0 and i<(n-1):
+        print(i,end=',')
+    else:
+        print(i,end=' ')    
+    i=i+2
+
+    # 
