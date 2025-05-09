@@ -148,15 +148,118 @@
 # print(f'factorial of given number {a} is {fact}')    
 
 
+
+#QUES(1). WAP TO PRINT N EVEN NATURAL NUMBER
+
+# n=int(input("enter a number: "))
+# i=2
+# while i<=2*n:
+#     if i%2==0 and i<(2*n-1):
+#         print(i,end=',')
+#     else:
+#         print(i,end=' ')    
+#     i=i+2    
+
+
 #QUES(2). WAP TO PRINT EVEN NO UPTO N NATURAL NUMBER
 
-n=int(input("enter a number: "))
-i=2
-while i<=n:
-    if i%2==0 and i<(n-1):
-        print(i,end=',')
-    else:
-        print(i,end=' ')    
-    i=i+2
+# n=int(input("enter a number: "))
+# i=2
+# while i<=n:
+#     if i%2==0 and i<(n-1):
+#         print(i,end=',')
+#     else:
+#         print(i,end=' ')    
+#     i=i+2
 
-    # 
+
+#QUES(3). WAP TO PRINT SUM OF N EVEN NUMBERS
+
+
+# n=int(input("enter a number: "))
+# i=2
+# sum=0
+# while i<=2*n:
+#     sum=sum+i
+#     if i%2==0 and i<(2*n-1):
+#         print(i,end='+')
+#     else:
+#         print(i,end='=')    
+#     i=i+2    
+# print(sum)
+
+
+#QUES(4). WAP TO PRINT SUM OF EVEN NO UPTO N NATURAL NUMBERS
+
+
+# n=int(input("enter a number: "))
+# i=2
+# sum=0
+# while i<=n:
+#     sum=sum+i
+#     if i%2==0 and i<(n-1):
+#         print(i,end='+')
+#     else:
+#         print(i,end='=')    
+#     i=i+2    
+# print(sum)
+
+
+
+
+#QUES(5). WAP TO PRINT N ODD  NATURAL NUMBER
+
+# n=int(input("enter a number: "))
+# i=1
+# while i<=2*n:
+#     if i%2!=0 and i<(2*n-1):
+#         print(i,end=',')
+#     else:
+#         print(i,end=' ')    
+#     i=i+2    
+
+
+
+#QUES(6). WAP TO PRINT ODD NO UPTO N NATURAL NUMBER
+
+# n=int(input("enter a number: "))
+# i=1
+# while i<=n:
+#     if i%2!=0 and i<(n-1):
+#         print(i,end=',')
+#     else:
+#         print(i,end=' ')    
+#     i=i+2
+
+
+
+#QUES(7). WAP TO PRINT SUM OF N ODD NUMBERS
+
+# n=int(input("enter a number: "))
+# i=1
+# sum=0
+# while i<=2*n:
+#     sum=sum+i
+#     if i%2!=0 and i<(2*n-1):
+#         print(i,end='+')
+#     else:
+#         print(i,end='=')    
+#     i=i+2    
+# print(sum)
+
+
+#QUES(8). WAP TO PRINT SUM OF ODD NO UPTO N NATURAL NUMBERS
+
+# n=int(input("enter a number: "))
+# i=1
+# sum=0
+# while i<=n:
+#     sum=sum+i
+#     if i%2!=0 and i<(n-1):
+#         print(i,end='+')
+#     else:
+#         print(i,end='=')    
+#     i=i+2    
+# print(sum)
+
+
