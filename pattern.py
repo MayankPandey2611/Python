@@ -81,14 +81,14 @@
 
 # QUES 9.
 
-n=5
-i=0
+# n=5
+# i=0
 
-while i<n:
-    print(  ' ' * i + ' *' * (n-i))
-    i=i+1
-i=i-2
-while i>=0:
-    print( ' ' * i + ' *' * (n-i))
-    i=i-1    
+# while i<n:
+#     print(  ' ' * i + ' *' * (n-i))
+#     i=i+1
+# i=i-2
+# while i>=0:
+#     print( ' ' * i + ' *' * (n-i))
+#     i=i-1    
 

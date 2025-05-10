@@ -263,3 +263,71 @@
 # print(sum)
 
 
+# QUES(9).  FABONACCI SERIES.
+
+# n=int(input("enter no."))
+
+# x,y=0,1
+# i=1
+# print(x,end="," )
+# print(y,end="," )
+# while i<=n:
+#     z=x+y
+#     if i<n:
+#         print(z , end=',')
+#     else:
+#         print(z , end=' ')
+#     x,y=y,z
+#     i=i+1
+
+
+
+# QUES(10). ARMSTRONG NUMBER.
+
+# n=int(input("check no. "))
+# x=y=n
+# digit = 0
+# sum =0
+# while n>0:
+#     digit = digit +1
+#     n=n//10
+
+
+# while x>0:
+#     ld = x%10
+#     sum = sum +ld**digit
+#     x=x//10
+
+
+# if y==sum:
+#     print(f'given no is {y} armstrong number.')
+# else:
+#     print(f'given no is {y} not a armstrong.')        
+
+
+
+# QUES(11). PALINDROME NUMBER
+
+#1. USING INBULIT METHOD SLICE.
+# n= input("enter no.")
+
+# if n == n[::-1]:
+#     print(f'given no {n} is a palindrome')
+# else:
+#     print(f'given no {n} is not a palindrome.')    
+
+# 2. WITHOUT SLICING
+
+n=int(input("enter no. "))
+
+x=n
+rev=0
+while n>0:
+    digit = n%10
+    rev = rev*10 + digit
+    n=n//10
+
+if x == rev:
+    print(f'yes')
+else:
+    print(f'no')        
