@@ -318,16 +318,16 @@
 
 # 2. WITHOUT SLICING
 
-n=int(input("enter no. "))
+# n=int(input("enter no. "))
 
-x=n
-rev=0
-while n>0:
-    digit = n%10
-    rev = rev*10 + digit
-    n=n//10
+# x=n
+# rev=0
+# while n>0:
+#     digit = n%10
+#     rev = rev*10 + digit
+#     n=n//10
 
-if x == rev:
-    print(f'yes')
-else:
-    print(f'no')        
+# if x == rev:
+#     print(f'yes')
+# else:
+#     print(f'no')        
