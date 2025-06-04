@@ -81,15 +81,27 @@
 
 # CURSOR MOVEMENT USING SEEK('where to move' , 'from where ') METHOD 
 
-f=open('n2.txt','rb')
+# f=open('n2.txt','rb')
 
-print(f.tell())
-data= f.read(10)
-print(data)
-# f.seek(5,1)  # from current position.
-f.seek(-5,2)  # from last position.
-print(f.tell())
-data= f.read(5)
-print(data)
+# print(f.tell())
+# data= f.read(10)
+# print(data)
+# # f.seek(5,1)  # from current position.
+# f.seek(-5,2)  # from last position.
+# print(f.tell())
+# data= f.read(5)
+# print(data)
 
-f.close()
+# f.close()
+
+# f=open('n3.txt' , 'x+')
+# print(f.readable())
+# print(f.writable())
+
+# f=open('n3.txt' , 'w+')
+# print(f.readable())
+# print(f.writable())
+
+# f=open('n3.txt' , 'a+')
+# print(f.readable())
+# print(f.writable())
