@@ -2,11 +2,75 @@
 # 1. MAP 
 # SYNTAX => MAP(FUNCTION , COLLECTION)
 
+# 1. LIST IN MAP
+# l=[2,3,4,5,6]
+
+# def sq(n):
+#     return n*n
+# x=map(sq,l)
+# print(x)  #it prints address of the variable
+# print(list(x))
+
+# 2. TUPLE IN MAP
+# t=(2,3,4,5,6)
+
+# def sq(n):
+#     return n*n
+# x=map(sq,t)
+# print(tuple(x))
+
+# 3. STRING IN MAP
+# s='mayank'
+# def ascii(n):
+#     x=chr(ord(n))
+#     return x
+# x=map(ascii,s)
+# print(list(x))
 
 
 
 # 2. FILTER 
-# 3. REDUCE 
+# SYNTAX => FILTER(FUNNCTION , ITERABLE / COLLECTION)
+
+# l=[2,1,3,4,5]
+
+# def check(n):
+#     if n>=3:
+#         return True
+# x=filter(check,l)
+# print(list(x))    
+
+# l=[10,9,7,5,3,12,16]
+
+# def check(n):
+#     if n%2==0:
+#         return True
+#     return False
+# x=filter(check,l)
+# print(list(x))
+
+# 3. REDUCE  => IN THIS WE HAVE TO IMPORT THE REDUCE METHOD AND FUNCTOOLS
+# SYNTAX => FUNCTOOLS.REDUCE(FINCTION , COLLECTION)  OR   REDUCE(FUNCTION , COLLECTION WITHOUT EXTRA VARIABLE)
+
+# from functools import reduce
+# def pro(x,y):
+#     return x*y
+# x=reduce(pro , [2,3,4,5])
+# print(x)
+
+# import functools
+# l=[10,2,4,5,90]
+
+# def gre(a,b):
+#     if a>b:
+#         return a
+#     else:
+#         return b
+# ans = functools.reduce(gre,l)
+# print(ans)
+    
+
+
 
 # 4. LAMBDA => 
 # SYNTAX => LAMBDA PARAMETERS : EXPRESSION 

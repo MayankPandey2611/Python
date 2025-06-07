@@ -123,11 +123,108 @@
 
 # QUES 10. PATTERN 3.
 
-n = int(input('enter no. of rows'))
+# n = int(input('enter no. of rows'))
 
-for i in range(1,n+1):
-    ch='A'
-    for j in range(1,n+1):
-        print(ch,end='')
-        ch=chr(ord(ch)+1)
-    print()    
+# for i in range(1,n+1):
+#     ch='A'
+#     for j in range(1,n+1):
+#         print(ch,end='')
+#         ch=chr(ord(ch)+1)
+#     print()    
+
+
+
+
+# TEST QUESTIONS
+
+# def check(n):
+#     if n%2==0:
+#         print('even')
+#     else:
+#         print('odd')
+# n= int(input())
+# check(n)
+
+
+# def fact(n):
+#     res = 1
+#     while n>=1:
+#         res = res*n
+#         n=n-1
+#     return res
+# n=int(input())
+# print(fact(n))
+
+
+# x=int(input())
+# y=int(input())
+
+# if x > y:
+#     gre = x
+# else:
+#     gre = y 
+
+# while(True):
+#     if((gre % x ==0) and (gre % y ==0)):
+#         lcm = gre
+#         break
+#     gre+=1
+
+# print(lcm)
+
+
+# x=int(input()) 
+# y=int(input())
+
+# if x>y:
+#     small=x
+# else:
+#     small=y
+
+# for i in range(1,small+1):
+#     if( x % i == 0 and y % i ==0):
+#         hcf = i
+# print(hcf) 
+
+
+# n = int(input())
+# factors =[]
+# for i in range(1,n+1):
+#     if n%i==0:
+#         factors.append(i)
+# print(factors)    
+
+
+# l=[2,1,98,0,89,6,500,45]
+# n=len(l)
+# max=l[0]
+# for i in range(n-1):
+#     if max < l[i+1]:
+#         max=l[i+1]
+#     else:
+#         max=l[i]  
+# print(max)
+
+
+# l=[1,4,2,4,12,0,10]
+
+# min = l[0]
+# for i in range(len(l)-1):
+#     if l[i] < l[i+1]:
+#         min= l[i]
+#         l[i],l[i+1] = l[i+1],l[i]
+#     else:
+#         min=l[i+1]
+# print(min)
+
+
+# def nno(n):
+#     for i in range(1,n+1):
+#         if i<n:
+#             print(i,end=",")
+#         else:
+#             print(i,end="")
+# n=int(input())
+# nno(n)
+
+
