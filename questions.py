@@ -227,4 +227,39 @@
 # n=int(input())
 # nno(n)
 
+# TEST QUESTION 1.(a)
+
+# l=[{"gfg":2 , "best":4},{"gfg":2}]
+
+# # print(len(l[0]))
+
+# max_i=0
+# max_l=0
+
+# for i in range(len(l)):
+#     x=len(l[i])
+
+#     if x>max_l:
+#         max_i,max_l = i+1,x
+# print(max_i)
+# print(max_l)
+
+
+
+# TEST QUESTION 1.(b)
+
+# d={"a":2,"b":5,"c":"hello","d":9}
+
+# key=int(input())
+
+# l=[]
+
+# for k,v in d.items():
+    
+#     if v>key:
+#         l.append(k) 
+
+# for i in l:
+#     d.pop(i)
+# print(d)
 
