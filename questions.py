@@ -263,3 +263,14 @@
 #     d.pop(i)
 # print(d)
 
+
+
+s=str(input())
+
+
+reverse_s = s[::-1]
+
+if s==reverse_s:
+    print('Palindrome')
+else:
+    print('not a palindrome')
