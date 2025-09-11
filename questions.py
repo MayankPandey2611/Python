@@ -265,12 +265,216 @@
 
 
 
+# s=str(input())
+
+
+# reverse_s = s[::-1]
+
+# if s==reverse_s:
+#     print('Palindrome')
+# else:
+#     print('not a palindrome')
+
+
+
+# l1=[1,2,3]
+# l2=[4,5,6]
+
+# d={}
+
+# for i in range(len(l1)):
+#     d[l1[i]] = l2[i]
+# print(d)
+
+
+# 1. 
+
+# s=str(input())
+# ans= s[::-1]
+# print(ans)
+
+
+# 2.
+
+# s=str(input())
+
+# rev_s=s[::-1]
+
+# if s == rev_s:
+#     print(True)
+# else:
+#     print(False)
+
+# 3. 
+
+# def fact(n):
+#     if n == 0:
+#         return 1
+#     return n * fact(n-1)
+# n=int(input())
+# ans=fact(n)
+# print(ans)
+
+# 4.
+
+# s=str(input())
+# a=s.lower()
+# count=0
+
+# vowels = "aeiou"
+
+# for char in a:
+#     if char in vowels:
+#         count += 1
+# print(count)
+
+# 5. 
+
+# l1=[1,3,4,6,10,8]
+# max=l1[0]
+
+# for i in range(len(l1)):
+#     if (l1[i] > max):
+#         max = l1[i]
+# print(max)
+
+
+# 6. 
+
+# n=int(input())
+# f=0
+# s=1
+# i=1
+# while(i<=n):
+#     print(f,end=' ')
+#     nx=f+s
+#     f=s
+#     s=nx
+#     i=i+1
+
+
+# 7. 
+
+# n=int(input())
+# a=n
+# m=a
+# s=0
+# while(n>0):
+#     s+=1
+#     n //= 10
+
+# sum=0
+
+# while(a>0):
+#     d=a%10
+#     sum += d**s
+#     a //= 10
+    
+# if m == sum:
+#     print('armastrong number')
+# else:
+#     print('not an armstrong')
+
+
+# 8. 
+
+# l=[1,1,2,3,3,4,5,6,7,8,8,8,9,9,9]
+# s=set(l)
+# l1=list(s)
+# print(l1)
+
+
+# 9. 
+
+# d={'a':2 , 'b':1 , 'c':3}
+# d1=dict(sorted(d.items(), key=lambda x : x[1]))
+# print(d1)
+
+# 10.  
+
+# s=str(input())
+# t=str(input())
+
+# if len(s) != len(t):
+#     print('Not an anagram !!')
+# else:
+#     if sorted(s) == sorted(t):
+#         print('anagram !!')
+#     else:
+#         print('not an anagram !!')
+    
+# 11 . 
+
+# l=[1,2,6,5,9,4,90,89,10,11,23,543]
+# m=max(l)
+# l.remove(m)
+# print(max(l))
+
+# 12. 
+
+# arr=[1,2,4,6,8]
+# n=len(arr)
+
+# for i in range(n-1):
+#     diff = arr[i+1] - arr[i]
+
+#     if diff > 1:
+#         for m in range(arr[i]+1 , arr[i+1]):
+#             print(m)
+
+
+# 13. FIRST METHOD.....
+
+
+# n = int(input("Enter n: "))
+
+# def is_prime(num):
+#     if num <= 1:
+#         return False
+#     if num <= 3:
+#         return True
+#     if num % 2 == 0 or num % 3 == 0:
+#         return False
+    
+#     i = 5
+#     while i * i <= num:
+#         if num % i == 0 or num % (i+2) == 0:
+#             return False
+#         i += 6
+#     return True
+
+# for i in range(2, n+1):
+#     if is_prime(i):
+#         print(i, end=" ")
+
+
+# 13. SECOND METHOD....
+
+# n = int(input("Enter n: "))
+
+# for i in range(2, n+1):
+#     is_prime = True
+#     for j in range(2, int(i**0.5)+1):
+#         if i % j == 0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         print(i, end=" ")
+
+
+
+# 14. 
+
+# arr=[2,3,4,5,6]
+# t=int(input())
+# n=len(arr)
+# for i in range(n):
+#     for j in range(i+1,n):
+#         if arr[i]+arr[j] == t:
+#             print(i,j)
+
+
+# 15. 
+
 s=str(input())
 
-
-reverse_s = s[::-1]
-
-if s==reverse_s:
-    print('Palindrome')
-else:
-    print('not a palindrome')

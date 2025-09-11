@@ -1,1 +1,1 @@
-print(type(z5))
+print(arr[i]+1)
