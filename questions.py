@@ -476,5 +476,100 @@
 
 # 15. 
 
-s=str(input())
+# def length(s:str)->int:
+#     cset=set()
+#     mlen=0
+#     l=0
 
+    
+#     for right in range(len(s)):
+#         while s[right] in cset:   
+#             cset.remove(s[l])
+#             l += 1
+#         cset.add(s[right])
+#         mlen = max(mlen, right - l + 1)
+
+#     return mlen
+# s=str(input())
+# print(length(s))
+
+
+
+# 16. 
+
+# def flatten(l):
+#     res=[]
+
+#     for i in l:
+#         if isinstance(i,list):
+#             res.extend(flatten(i))
+#         else:
+#             res.append(i)
+#     return res
+
+
+# l=[[1,2],[3,4],[5,[6,7]]]
+
+# print(flatten(l))
+
+
+
+# 17.
+
+# d1={'a':1}
+# d2={'b':2}
+# d1.update(d2)
+
+# print(d1)
+
+
+# 18. 
+
+# n=int(input())
+# l=[]
+# for i in range(1,n+1):
+#     l.append(i*i)
+# print(l)
+
+
+# 19. 
+
+# from collections import Counter
+# s=str(input())
+# words=s.split()
+# ans=Counter(words)
+# print(dict(ans))
+
+
+# 20. 
+
+# import time
+
+# def timer(func):
+#     def wrapper(*args, **kwargs):
+#         start = time.time()              # record start time
+#         result = func(*args, **kwargs)   # run the function
+#         end = time.time()                # record end time
+#         print(f"{func.__name__} executed in {end - start:.6f} seconds")
+#         return result
+#     return wrapper
+
+# @timer
+# def slow_function():
+#     total = 0
+#     for i in range(10**6):
+#         total += i
+#     return total
+
+# print(slow_function())
+
+# 21. 
+
+l=[1,2,3,10,11,23,21]
+l1=[5,6,7,9,8,4]
+
+for i in range(len(l)):
+    if l[i] in l1:
+        print(l[i])
+    
+        
