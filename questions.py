@@ -565,11 +565,69 @@
 
 # 21. 
 
-l=[1,2,3,10,11,23,21]
-l1=[5,6,7,9,8,4]
+# l=[1,2,3,10,11,23,21]
+# l1=[5,6,7,9,8,4]
 
-for i in range(len(l)):
-    if l[i] in l1:
-        print(l[i])
+# for i in range(len(l)):
+#     if l[i] in l1:
+#         print(l[i])
     
         
+# 22.
+
+
+# arr=[1,2,1,3,4]
+
+# s=set()
+# ans=set()
+
+# for i in arr:
+#     if i in s:
+#         ans.add(i)
+#     else:
+#         s.add(i)
+# print(list(ans))
+
+
+# 23.
+
+# l1=[1,3,2,4,6,2]
+# stack=[]
+# for i in l1:
+#     stack.push(i)
+# print(stack)
+
+# 24. 
+
+# l=[3,2,1,5,3,1]
+# print(sorted(l,reverse=True))
+
+
+# 25.
+
+# import os
+
+# print(os.path.isfile('eample.py'))
+
+
+# 26. 
+# s="madam"
+# if s == s[::-1]:
+#     print('palindrome')
+# else:
+#     print('not a palindrome')
+
+
+# 27. 
+# ans=",".join(["a","b","c"])
+# print(ans)
+
+# 28. 
+
+# s="  mayank  "
+# print(s.strip())
+
+
+
+# 29.  
+

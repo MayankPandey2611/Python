@@ -25,3 +25,8 @@
 # f.close()
 
 
+# with open('n2.py',"w") as f:
+#     pass
+
+
+
