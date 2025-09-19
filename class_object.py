@@ -94,15 +94,15 @@
 
 #-----------------------------------------------  LOCAL METHOD ---------------------------------------------#
 
-# class student:
-#     def __init__(self,name):
-#         grade='12'
-#         self.n = name
-#         print(grade)
-#     def new(self):
-#         print(student.grade)   # LOCAL VARIABLE CANNOT BE ACCESSED INSIDE INSTANCE METHOD.
-# obj  = student('mayank')
-# obj.new('12')
+class student:
+    def __init__(self,name):
+        grade='12'
+        self.n = name
+        print(grade)
+    def new(self):
+        print(student.grade)   # LOCAL VARIABLE CANNOT BE ACCESSED INSIDE INSTANCE METHOD.
+obj  = student('mayank')
+obj.new('12')
 
 # OBJECT
 # CONSTRUCTOR

@@ -10,10 +10,10 @@ def outer_func(main_func):
 @outer_func
 def add(x,y):
     return x+y
-# x=outer_func()
-# print(x)
-# z=x(10)
-# print(z)
+x=outer_func()
+print(x)
+z=x(10)
+print(z)
 
 z=add(2,10)
 print(z)

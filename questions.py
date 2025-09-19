@@ -631,3 +631,67 @@
 
 # 29.  
 
+# L=[1,23,4]
+# b=L
+# b.append(5)
+# print(L)
+
+# def f(val,l=[]):
+#     l.append(val)
+#     return l
+# print(f(10))
+# print(f(10))
+# print(f(10))
+# print(f(10))
+
+# x=(1,2,3)
+# x[0]=10
+# print(x)
+
+
+# a = [[], []] * 2
+# a[0].append(10)
+# print(a)
+
+
+# def f1():
+#     return "A"
+# def f2():
+#     yield "B"
+
+# print(type(f1()), type(f2()))
+
+
+# x = [1, 2, 3]
+# y = x
+# y = y + [4, 5]
+# print(x, y)
+
+
+# x = (1, 2, [3, 4])
+# x[2].append(5)
+# print(x)
+
+
+# for i in range(3):
+#     print(i)
+# else:
+#     print("Done")
+
+
+# s=str(input())
+# s=s.lower()
+# s=s.split()
+# if s == s[::-1]:
+#     print('p')
+# else:
+#     print('np')
+
+
+import re
+
+def is_palindrome(s):
+    s = re.sub(r'[^a-zA-Z0-9]', '', s).lower()
+    return s == s[::-1]
+
+print(is_palindrome("A man, a plan, a canal: Panama"))  # True
