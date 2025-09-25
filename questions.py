@@ -688,10 +688,153 @@
 #     print('np')
 
 
-import re
+# import re
 
-def is_palindrome(s):
-    s = re.sub(r'[^a-zA-Z0-9]', '', s).lower()
-    return s == s[::-1]
+# def is_palindrome(s):
+#     s = re.sub(r'[^a-zA-Z0-9]', '', s).lower()
+#     return s == s[::-1]
 
-print(is_palindrome("A man, a plan, a canal: Panama"))  # True
+# print(is_palindrome("A man, a plan, a canal: Panama"))  
+
+
+
+#30. STRONG NUMBER......
+
+# def fact(d):
+#     if d <=1:
+#         return 1 
+#     return d*fact(d-1)
+
+# n=int(input())
+
+# a=n
+# sum=0
+
+# while(n>0):
+#     d=n%10
+#     d=fact(d)
+#     sum = sum+d
+#     n //= 10
+
+# if a == sum:
+#     print('strong number')
+# else:
+#     print('not a strong number')
+
+
+#31. 
+
+# from collections import Counter
+
+# def maxf(arr):
+#     freq=Counter(arr)
+#     maxfr=max(freq.values())
+#     ans=0
+#     for c in freq.values():
+#         if c == maxfr:
+#             ans += c
+#     return ans
+
+
+# arr=[1,2,3,4,5]
+# print(maxf(arr))
+
+
+
+# 32.
+
+# def findtarget(arr,t):
+#     i=0
+#     j=len(arr)-1
+
+#     while(i <=j):
+#         mid = (i+j)//2
+
+#         if (arr[mid] == t):
+#             return mid
+        
+#         if(arr[i] <= arr[mid]):
+#             if(arr[i] <= t and t < arr[mid]):
+#                 j = mid -1
+#             else:
+#                 i = mid +1
+#         else:
+#             if(arr[mid] < t and t <arr[j] ):
+#                 i = mid +1
+#             else:
+#                 j = mid -1
+#     return -1
+
+# arr=[4,5,6,0,1,2,3]
+# target=int(input())
+# print(findtarget(arr,target))
+
+
+
+
+# 33.
+
+# def summaryrange(arr):
+#     res = []
+#     i =0
+#     n = len(arr)
+    
+#     while i<n:
+#         s = arr[i]
+
+#         while i+1 < n and arr[i+1] == arr[i]+1:
+#             i += 1
+#         e=arr[i]
+
+#         if s == e:
+#             res.append(str(s))
+#         else:
+#             res.append(str(s) + "->" + str(e))
+#         i += 1
+#     return res
+
+
+# arr=[0,1,2,4,5,6,8]
+# print(summaryrange(arr))
+
+
+
+
+# 34.
+
+# METHOD 1......
+
+# def intersection(nums1,nums2):
+#     res=[]
+#     i,j=0,0
+#     nums1=sorted(nums1)
+#     nums2=sorted(nums2)
+
+#     while(i < len(nums1) and j < len(nums2)):
+#         if(nums1[i] < nums2[j]):
+#             i +=1
+#         elif(nums1[i] > nums2[j]):
+#             j += 1
+#         else:
+#             if(len(res) == 0 or res[-1] != nums1[i]):
+#                 res.append(nums1[i])
+#             i += 1
+#             j += 1
+#     return res
+
+
+
+
+
+# nums1=[9,6,5,4]
+# nums2=[4,9,9,0,7]
+
+# print(intersection(nums1,nums2))
+
+
+# METHOD 2.............
+
+# def intersection(n1,n2):
+#     return list(set(n1) & set(n2))
+
+# print(intersection([9,8,2,4],[4,9,5]))
