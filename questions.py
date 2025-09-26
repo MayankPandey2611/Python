@@ -838,3 +838,81 @@
 #     return list(set(n1) & set(n2))
 
 # print(intersection([9,8,2,4],[4,9,5]))
+
+
+
+# 35.
+# METHOD 1..........
+# def thirdhighest(nums):
+#     f = s = t = float('-inf')
+
+#     for i in nums:
+#         if i in(f,s,t):
+#             continue
+#         if i > f:
+#             f,s,t = i,f,s
+#         elif i > s:
+#             s,t=i,s
+#         elif i> t:
+#             t=i
+#     if t == float('-inf'):
+#         return f
+#     else:
+#         return t
+
+
+
+# METHOD 2..................
+
+# def thirdhighest(nums):
+#     nums=set(nums)
+
+#     if len(nums) < 3:
+#         return max(nums)
+#     return sorted(nums,reverse=True)[2]
+    
+# nums=[0,5,0]
+# print(thirdhighest(nums))
+
+
+# 36. 
+
+# def triangle(nums):
+#     nums=sorted(nums)
+#     n,count=len(nums),0
+
+#     for c in range(n-1,1,-1):
+#         a,b=0,c-1
+
+#         while a<b:
+#             if nums[a]+nums[b] > nums[c]:
+#                 count += (b-a)
+#                 b -=1
+#             else:
+#                 a += 1
+#     return count
+
+
+
+# nums=[2,2,3,4]
+# print(triangle(nums))
+
+
+
+def disapperingnumbers(nums):
+    n = len(nums)
+
+    for i in range(0,n):
+        idx = abs(nums[i])-1
+        if nums[idx] >0:
+            nums[idx] = -nums[idx]
+
+    res=[]
+    for j in range(0,n):
+        if nums[j] > 0:
+            res.append(j+1)
+    return res
+   
+
+nums=[1,3,5,7,9,9,7,5,3]
+print(disapperingnumbers(nums))
