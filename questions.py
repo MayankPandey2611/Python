@@ -898,21 +898,493 @@
 # print(triangle(nums))
 
 
+# 37.
 
-def disapperingnumbers(nums):
-    n = len(nums)
+# def disapperingnumbers(nums):
+#     n = len(nums)
 
-    for i in range(0,n):
-        idx = abs(nums[i])-1
-        if nums[idx] >0:
-            nums[idx] = -nums[idx]
+#     for i in range(0,n):
+#         idx = abs(nums[i])-1
+#         if nums[idx] >0:
+#             nums[idx] = -nums[idx]
 
-    res=[]
-    for j in range(0,n):
-        if nums[j] > 0:
-            res.append(j+1)
-    return res
+#     res=[]
+#     for j in range(0,n):
+#         if nums[j] > 0:
+#             res.append(j+1)
+#     return res
    
 
-nums=[1,3,5,7,9,9,7,5,3]
-print(disapperingnumbers(nums))
+# nums=[1,3,5,7,9,9,7,5,3]
+# print(disapperingnumbers(nums))
+
+
+
+# 38.
+
+# class person:
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+#     def show(self):
+#         print(f"name : {self.name} , age : {self.age} ")
+
+# obj = person("mayank" , 22)
+# obj.show()
+        
+
+# 39. 
+
+# import math
+# class circle:
+#     def __init__(self,radius):
+#         self.radius = radius
+
+#     def area(self):
+#         return math.pi * self.radius * self.radius
+    
+#     def cirum(self):
+#         return 2 * math.pi * self.radius
+    
+# obj = circle(5)
+# print(obj.area())
+# print(obj.cirum())
+        
+
+
+# 40.
+
+# class Student:
+#     school_name="SIRT"
+#     def __init__(self,name,rollno):
+#         self.name = name
+#         self.rollno = rollno
+#     def show(self):
+#         print(f" name : {self.name} , rollno : {self.rollno} , from {Student.school_name}")
+
+# obj = Student("mayank" , 96)
+# obj.show()
+
+
+
+# 41.
+
+# class Bankaccount:
+#     def __init__(self,owner,balance=0):
+#         self.owner = owner
+#         self.balance = balance
+
+#     def deposit(self,amount):
+#         self.balance += amount
+#         print(f"successfully deposits Rs.{amount} , New Balance is Rs . {self.balance}")
+
+#     def withdraw(self,amount):
+#         if amount > self.balance:
+#             print("insuffiencent balance !!")
+#         elif amount <= 0:
+#             print("Very less amount")
+#         else:
+#             self.balance -= amount
+#             print(f"succssfully withdrawn Rs.{amount} , Avaliable Balance : {self.balance} ")
+    
+#     def check(self):
+#         print(f"Balance : {self.balance}")
+
+
+# obj = Bankaccount("mayank",500)
+# obj.check()
+# obj.deposit(500)
+# obj.withdraw(300)
+# obj.withdraw(100)
+
+
+
+# 42.
+
+# class Employee:
+#     def __init__(self,name,salary):
+#         self.name=name
+#         self.salary=salary
+
+#     def get_tax(self,salary):
+#         self.salary -= salary * 0.10
+
+#         print(f"after detecting tax your salary is {self.salary}")
+
+# obj= Employee("mayank",500)
+# obj.get_tax(500)
+        
+
+
+# 43.
+
+# class Animal:
+#     def speak(self):
+#         print("I am an Animal....")
+# class Dog(Animal):
+#     def speak(self):
+#         print("baww baww !!")
+# class Cat(Animal):
+#     def  speak(self):
+#         print("meww meww !!")
+# obj = Animal()
+# obj1 = Dog()
+# obj2 = Cat()
+
+# obj.speak()
+# obj1.speak()
+# obj2.speak()
+
+
+# 44.
+
+
+# class shoppingcart:
+#     def __init__(self):
+#         self.items={}
+
+#     def additem(self,item,price):
+#         self.items[item] = price
+#         print(f"item added {item} -> {price}")
+    
+#     def removeitem(self,item):
+#         if item in self.items:
+#             del self.items[item]
+#             print("item deleted !!")
+#         else:
+#             print(f"{item} not found in the cart !!")
+    
+#     def totalprice(self):
+#         return sum(self.items.values())
+
+# obj = shoppingcart()
+# obj.additem("pants" , 1200)
+# obj.additem("shirts",540)
+# obj.removeitem("pats")
+# print(obj.totalprice())
+        
+        
+# 45.
+
+# class Library:
+#     def __init__(self):
+#         self.books = []
+
+#     def addbook(self,title):
+#         self.books.append(title)
+#         print(f"New Book {title} added in Library...")
+
+#     def removebook(self,title):
+#         if title in self.books:
+#             self.books.remove(title)
+#             print(f"{title} Successfully Deleted From Library....")
+#         else:
+#             print(f"Book name {title} not found in library...")
+    
+#     def display(self):
+#         print(f"Here is List of Books {self.books}")
+
+
+# obj = Library()
+# obj.addbook("Harry Potter")
+# obj.addbook("Ramayan")
+# obj.addbook("ok jaanu")
+# obj.addbook("mahabarat")
+# obj.removebook("Harr Potter")
+# obj.display()
+
+
+
+
+# 46.
+
+# class Math:
+#     @staticmethod
+#     def factorial(n):
+#         res =1 
+#         for i in range(1,n+1):
+#             res *= i
+#         return res
+    
+#     @classmethod
+#     def square(cls,x):
+#         return x*x
+    
+# print(Math.factorial(5))
+# print(Math.square(5))
+            
+
+# 47.
+
+# class Teacher:
+#     def teach(self):
+#         print("Teacher Teaches a Lesson.")
+    
+# class Student:
+#     def study(self):
+#         print("student learns the lesson.")
+
+# class TeachingAssitant(Student,Teacher):
+#     def show(self):
+#         print("assitant teacher...")
+
+# obj=TeachingAssitant()
+# obj.teach()
+# obj.study()
+# obj.show()
+
+
+# 48. Create a class MaxFinder that identifies the largest number in a list.
+
+# class maxfinder:
+#     def __init__(self,numbers):
+#         self.numbers = numbers
+    
+#     def maxelement(self):
+#         if not self.numbers:
+#             return None
+#         else:
+#             return max(self.numbers)
+        
+# l=[1,43,2,56,7,8,0]
+# obj=maxfinder(l)
+# print(obj.maxelement())
+
+
+
+# 49.  Last Digit in Words: Write a class with a method that takes an integer and prints the last digit of that
+#  number in words.
+
+# class numinwords:
+#     d=['zero','one','two','three','four','five','six','seven','eight','nine']
+
+#     def __init__(self,n):
+#         self.n = n
+
+#     def givelastd(self):
+#         ld=abs(self.n) % 10
+#         print(self.d[ld])
+       
+# obj=numinwords(50)
+# obj.givelastd()
+
+
+# 50. Student Grade Calculator: Implement a Student class with attributes for name and a list of
+#  marks(for 5 subjects). Include a method to calculate the average and determine the grade.
+
+# class Student:
+    
+#     def __init__(self,name,marks):
+#         self.name = name
+#         self.marks = marks
+    
+#     def findavg(self):
+#         return sum (self.marks) / len(self.marks)
+
+#     def findgrade(self):
+        
+#         avg = self.findavg()
+
+#         if avg >=95 and avg <= 100:
+#             print(f"grade of {self.name} is ' A+ '")
+#         elif avg >= 85 and avg < 95 :
+#             print(f"grade of {self.name} is ' A '")
+
+#         elif avg >= 75 and avg < 85:
+#             print(f"grade of {self.name} is ' B+ '")
+#         elif avg >= 65 and avg < 75:
+#             print(f"grade of {self.name} is ' B '")
+#         elif avg >= 55 and avg < 65:
+#             print(f"grade of {self.name} is ' C+ '")
+#         elif avg >= 45 and avg < 55:
+#             print(f"grade of {self.name} is ' C '")
+#         elif avg >= 33 and avg < 45:
+#             print(f"grade of {self.name} is ' D '")
+#         else:
+#             print(f"{self.name} is fail !!")
+
+# l=[30,33,33,33,33]
+# obj = Student('mayank',l)
+# obj.findgrade()
+
+
+
+# 51.  Define an abstract base class Polygon with an abstract method area. Implement this in derived
+#  classes Rectangle and Triangle.
+
+# from abc import ABC , abstractmethod
+# class Polygon(ABC):
+#     @abstractmethod
+#     def area(self):
+#         pass
+
+# class Rectangle(Polygon):
+#     def __init__(self,l,w):
+#         self.l  = l
+#         self.w  = w
+    
+#     def area(self):
+#         return self.l * self.w
+
+# class Triangle(Polygon):
+#     def __init__(self,b,h):
+#         self.b = b
+#         self.h = h
+    
+#     def area(self):
+#         return 0.5 * self.b * self.h
+
+# obj1 = Rectangle(10,20)
+# obj2 = Triangle(70,90)
+
+# print(obj1.area())
+# print(obj2.area())
+        
+        
+# 52. Design a class that tracks how many objects have been created from it and has a method to display
+#  this count
+
+# class objectcounter:
+#     count=0
+#     def __init__(self):
+#         objectcounter.count += 1
+
+#     @classmethod
+#     def display(cls):
+#         print("No of Objects created is : " , cls.count)
+        
+
+# obj=objectcounter()
+# obj1=objectcounter()
+# obj2=objectcounter()
+# obj3=objectcounter()
+# obj4=objectcounter()
+# obj5=objectcounter()
+# obj6=objectcounter()
+# obj7=objectcounter()
+        
+# objectcounter.display()
+
+
+# 53.  Implement a class Account with a private attribute balance and provide methods to deposit and
+#  withdraw safely, checking for sufficient funds.
+
+# class Account:
+#     def __init__(self,balance=0):
+#         self.__balance = balance
+
+#     def deposit(self,balance):
+#         if balance > 0:
+#             self.__balance += balance
+#             print(f"Succfully Deposit Rs.{balance} , New Balance : {self.__balance} ")
+#         else:
+#             print("Amount should be positive !!")
+
+#     def withdraw(self,amount):
+#         if amount > self.__balance:
+#             print("Insufficent Balance !!")
+#         else:
+#             self.__balance -= amount
+#             print(f"Successfully Withdrawn Rs.{amount} , Remaining Fund is Rs.{self.__balance}")
+    
+#     def checkb(self):
+#         print(f"Avaliable Amount is Rs. {self.__balance}")
+        
+# obj = Account()
+# obj.deposit(1000)
+# obj.withdraw(100)
+# obj.checkb()
+    
+
+
+# 54. Static and Class Methods Demonstrate the use of static and class methods in a class Calculator
+#  with methods to add and multiply numbers.
+
+# class Calulator:
+#     @staticmethod
+#     def add(a,b):
+#         return a+b
+    
+#     @classmethod
+#     def multi(cls,a,b):
+#         return a*b
+    
+# print(Calulator.add(2,1))
+# print(Calulator.multi(2,5))
+
+        
+
+# 55.  Write a Python program to create a person class. Include attributes like name, country and date of
+#  birth. Implement a method to determine the person's age.
+
+# from datetime import datetime
+
+# class Person:
+#     def __init__(self,name,country,DOB):
+#         self.name = name
+#         self.country = country
+#         self.DOB = datetime.strptime(DOB,"%Y-%M-%d")
+
+#     def findage(self):
+#         today = datetime.today()
+#         age = today.year - self.DOB.year
+
+#         if (today.month , today.day) < (self.DOB.month , self.DOB.day):
+#             age -= 1
+#         print(f"{self.name} Your current age is {age}")
+
+# obj = Person('mayank','india','2018-08-11')
+# obj.findage()
+        
+
+# 56. Write a Python program that checks if one class is a subclass of another.
+
+
+# class Staff:
+#     def __init__(self):
+#         print("Staff")
+    
+# class Teacher(Staff):
+#     def __init__(self):
+#         print("Teacher(staff)")
+
+# obj = Staff()
+# print(issubclass(Staff,Teacher))
+# print(issubclass(Teacher,Staff))
+        
+
+# 57.  Write a Python program that overloads the operator + and > for a custom class.
+
+# class Box:
+#     def __init__(self, length, width, height):
+#         self.length = length
+#         self.width = width
+#         self.height = height
+
+#     def __add__(self, other):
+#         return Box(self.length + other.length, self.width + other.width, self.height + other.height)
+    
+#     def __gt__(self, other):
+#         return self.volume() > other.volume()
+    
+#     def volume(self):
+#         return self.length * self.width * self.height
+    
+# def __str__(self):
+#         return f"Box({self.length}, {self.width}, {self.height})"
+
+
+# obj1 = Box(2, 3, 4)
+# obj2 = Box(1, 2, 5)
+# obj3 = obj1 + obj2
+# print("After addition:", obj3)  
+
+# if obj1 > obj2:
+#     print("obj1 is bigger than obj2")
+# else:
+#     print("obj2 is bigger than or equal to obj1")
+
+
+
+# 58.
+
