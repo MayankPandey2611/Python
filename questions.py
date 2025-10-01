@@ -1386,5 +1386,38 @@
 
 
 
-# 58.
+# 58.  1518. PROBLEM NUMBER (WATER BOTTLES EXCHANGE...)
 
+# def drinkwater(bottles,exchange):
+#     total = bottles
+#     empty = bottles
+
+#     while(empty >= exchange):
+#         newB = empty // exchange
+#         total += newB
+#         empty = newB + (empty % exchange)
+
+#     return total
+
+# bottles=15
+# exchange =4
+
+# print(drinkwater(bottles,exchange))
+
+
+
+# 59. MAXIMIMUM CONSECUTIVE ONES....
+
+def countones(nums):
+    size,maxsize=0,0
+
+    for i in range(len(nums)):
+        if nums[i] == 1:
+            size += 1
+            maxsize = max(maxsize,size)
+        else:
+            size = 0    
+    return maxsize
+
+nums=[1,1,0,1,1,1,0]
+print(countones(nums))
