@@ -1408,16 +1408,176 @@
 
 # 59. MAXIMIMUM CONSECUTIVE ONES....
 
-def countones(nums):
-    size,maxsize=0,0
+# def countones(nums):
+#     size,maxsize=0,0
 
-    for i in range(len(nums)):
-        if nums[i] == 1:
-            size += 1
-            maxsize = max(maxsize,size)
-        else:
-            size = 0    
-    return maxsize
+#     for i in range(len(nums)):
+#         if nums[i] == 1:
+#             size += 1
+#             maxsize = max(maxsize,size)
+#         else:
+#             size = 0    
+#     return maxsize
 
-nums=[1,1,0,1,1,1,0]
-print(countones(nums))
+# nums=[1,1,0,1,1,1,0]
+# print(countones(nums))
+
+
+
+# 60.
+
+
+# def maxbd(b : int,e:int)->int:
+#     total = b
+#     empty =b
+
+#     while(empty >= e):
+#         empty -= e
+#         e += 1
+#         total += 1
+#         empty += 1
+#     return total
+
+# b=13
+# e=6
+# print(maxbd(b,e))
+
+
+# 61. TEEMO ATTACKING....
+
+# def findseconds(time,duration):
+#     if not time:
+#         return 0
+    
+#     total = 0
+
+#     for i in range(1,len(time)):
+#         total += min(time[i] - time[i-1] , duration)
+#     return total + duration
+
+
+# time=[1,2]
+# duration = 2
+# print(findseconds(time,duration))
+
+
+
+# 62. FIND NEXT GREATER ELEMENT....
+
+# def findgreater(num1,num2):
+#     st=[]
+#     greater={}
+#     res=[]
+
+#     for num in reversed(num2):
+#         while st and st[-1] <=num:
+#             st.pop()
+#         greater[num] = st[-1] if st else -1
+#         st.append(num)
+
+#     return [greater[num] for num in num1]
+    
+ 
+
+
+
+# num1=[4,1,2]
+# num2=[1,3,4,2]
+
+# print(list(findgreater(num1,num2)))
+
+
+
+# 63.  KEYWORD ROW ....
+
+
+# def keywordrow(words):
+    
+#     ans =[]
+
+#     r1=set("qwertyuiop")
+#     r2=set("asdfghjkl")
+#     r3=set("zxcvbnm")
+
+
+#     for w in words:
+#         lwords = set(w.lower())
+#         if lwords <= r1 or lwords <= r2 or lwords <= r3:
+#             ans.append(w)
+#     return ans
+
+
+
+# words = ["dadgkgd","kalaa","roqwertyuio"]
+# print(list(keywordrow(words)))
+
+
+# 64. ARRAY PARTITION.....
+
+# def arraypartition(nums):
+#     # METHOD 1...(OPTIMIZED)
+#     # return sum(sorted(nums)[::2])
+
+#     # METHOD 2...
+#     nums.sort()
+#     ans = 0
+#     for i in range(0,len(nums),2):
+#         ans += nums[i]
+#     return ans
+
+
+
+# nums=[6,1,2,2,5,6]
+# print(arraypartition(nums))
+
+
+# 65.  Minimum Index Sum of Two Lists
+
+# def findcommon(l1,l2):
+#     res=[]
+#     index_map = {name: i for i, name in enumerate(l1)}
+#     min_sum = float('inf')
+
+#     for j,name in enumerate(l2):
+#         if name in index_map:
+#             s = j + index_map[name]
+#             if s < min_sum:
+#                 min_sum = s
+#                 res=[name]
+#             elif s== min_sum:
+#                 res.append(name)
+#     return res
+ 
+
+# l1 = ["sad","happy","good"]
+# l2 = ["happy","sad","good"]
+# print(findcommon(l1,l2))
+
+
+# 66. MAXIMUM PRODUCT OF THREE NUMBERS....
+
+# def maxproduct(nums):
+#     nums.sort()
+#     n=len(nums)
+#     return max(nums[n-1]*nums[n-2]*nums[n-3] , nums[0]*nums[1]*nums[n-1])
+
+# nums=[-5,12,0,-1,-6,90]
+# print(maxproduct(nums))
+
+
+# 67. MAXIMUM AVERAGE SUBARRAY....
+
+def findmaxavg(nums,k):
+    sum =0
+    for i in range(k):
+        sum += nums[i]
+    maxsum = sum
+
+    for i in range(k,len(nums)):
+        sum += nums[i] - nums[i-k]
+        maxsum = max(maxsum,sum)
+    return maxsum / k
+
+nums=[5]
+k=1
+print(findmaxavg(nums,k))
