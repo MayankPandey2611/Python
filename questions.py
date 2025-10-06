@@ -1567,17 +1567,55 @@
 
 # 67. MAXIMUM AVERAGE SUBARRAY....
 
-def findmaxavg(nums,k):
-    sum =0
-    for i in range(k):
-        sum += nums[i]
-    maxsum = sum
+# def findmaxavg(nums,k):
+#     sum =0
+#     for i in range(k):
+#         sum += nums[i]
+#     maxsum = sum
 
-    for i in range(k,len(nums)):
-        sum += nums[i] - nums[i-k]
-        maxsum = max(maxsum,sum)
-    return maxsum / k
+#     for i in range(k,len(nums)):
+#         sum += nums[i] - nums[i-k]
+#         maxsum = max(maxsum,sum)
+#     return maxsum / k
 
-nums=[5]
-k=1
-print(findmaxavg(nums,k))
+# nums=[5]
+# k=1
+# print(findmaxavg(nums,k))
+
+
+# 68. MINIMUM COST OF CLIMBING STAIRS.........
+
+
+# def mincost(cost):
+#     n=len(cost)
+#     s,e=0,0
+
+#     for i in range(2,n+1):
+#         c=min(s + cost[i-1] , e + cost[i-2])
+#         e=s
+#         s=c
+#     return s
+
+# cost = [10,15,20,1,0]
+# print(mincost(cost))
+
+
+# 69. HOUSE ROBBER....
+
+def maxmoney(nums):
+    n=len(nums)
+    if n==0: return 0
+    if n == 1: return nums[0]
+    if n ==2: return max(nums[0],nums[1])
+
+    e=nums[0]
+    s=max(nums[0],nums[1])
+    
+    for i in range(2,n):
+        c=max(s,e+nums[i])
+        e=s
+        s=c
+    return s
+
+houses=[2,1,1,2]
+print(maxmoney(houses))
