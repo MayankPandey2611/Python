@@ -1602,20 +1602,137 @@
 
 # 69. HOUSE ROBBER....
 
-def maxmoney(nums):
-    n=len(nums)
-    if n==0: return 0
-    if n == 1: return nums[0]
-    if n ==2: return max(nums[0],nums[1])
+# def maxmoney(nums):
+#     n=len(nums)
+#     if n==0: return 0
+#     if n == 1: return nums[0]
+#     if n ==2: return max(nums[0],nums[1])
 
-    e=nums[0]
-    s=max(nums[0],nums[1])
+#     e=nums[0]
+#     s=max(nums[0],nums[1])
     
-    for i in range(2,n):
-        c=max(s,e+nums[i])
-        e=s
-        s=c
-    return s
+#     for i in range(2,n):
+#         c=max(s,e+nums[i])
+#         e=s
+#         s=c
+#     return s
 
-houses=[2,1,1,2]
-print(maxmoney(houses))
+# houses=[2,1,1,2]
+# print(maxmoney(houses))
+
+
+
+# 70.Successful Pairs of Spells and Potions
+
+# def findpairs(s,p,success):
+#     n=len(s)
+#     m=len(p)
+#     p.sort()
+#     ans=list()
+
+#     for i in range(0,n):
+#         s1=s[i]
+#         l=0
+#         r=m-1
+#         while l <= r:
+#             mid = l + (r -l)//2
+#             product = s1 * p[mid]
+#             if product >= success:
+#                 r=mid-1
+#             else:
+#                 l=mid+1
+
+#         ans.append(m-l)
+#     return ans
+
+# s=[3,1,2]
+# p=[8,5,8]
+# success=16
+# print(findpairs(s,p,success))
+
+
+# 71. Longest Continuous Increasing Subsequence
+
+# def findlongest(nums):
+#     count = 1
+#     maxc = 1
+
+#     if len(nums) == 0:
+#         return 0
+
+#     for i in range(1,len(nums)):
+#         if nums[i]  > nums[i-1]:
+#             count += 1
+#         else:
+#             count =1
+#         maxc= max(count,maxc)
+#     return maxc
+
+# nums=[2,5,7,1,4,6,9]
+# print(findlongest(nums))
+
+
+# 72. BASEBALL GAME..
+
+# def points(op):
+#     st=[]
+    
+#     for i in op:
+#         if i == "C":
+#             st.pop()
+#         elif i == "D":
+#             st.append(st[-1] * 2)
+#         elif i == "+":
+#             st.append(st[-1] + st[-2])
+#         else:
+#             st.append(int(i))
+#     return sum(st)
+
+
+# op = ["5","-2","4","C","D","9","+","+"]
+# print(points(op))
+
+
+# 73. find degree....
+
+# def degree( nums):
+#         freq = {}
+#         first = {}
+#         last = {}
+
+#         for i, n in enumerate(nums):
+#             if n not in freq:
+#                 freq[n] = 0
+#                 first[n] = i
+#             freq[n] += 1
+#             last[n] = i
+
+#         degree = max(freq.values())
+#         min_len = float('inf')
+
+#         for n in freq:
+#             if freq[n] == degree:
+#                 min_len = min(min_len, last[n] - first[n] + 1)
+
+#         return min_len
+
+# nums=[1, 5, 2, 3, 5, 4, 5, 6]
+# print(degree(nums))
+
+
+
+# 74. 
+
+# def notanagram(w):
+#     def is_ana(s , t):
+#         return sorted(s) == sorted(t)
+
+#     ans=[]
+#     for i in w:
+#         if not ans or not is_ana(ans[-1] , i):
+#             ans.append(i)
+#     return ans
+
+
+# words=["abba","baba","bbaa","cd","dc",""]
+# print(list(notanagram(words)))
